@@ -1,0 +1,196 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*Fuente para el título*/
+@font-face{
+			font-family:'fuenteH1';
+			src:url('Fonts/AnthonyHunter.ttf');
+		}
+
+/*Fuente para el menú de navegación*/
+@font-face{
+	font-family: "fuente_menu_nav";
+	src:url('Fonts/28days.ttf');
+}
+
+
+header{
+	padding-top: 40px;
+}
+
+h1{
+	font: normal 60px 'fuenteH1';
+	background:rgba(0,0,0,0.37);
+	text-align: center;
+	align-content: center;
+	width: 25%;
+	min-width: 200px;
+	margin:20px auto;
+	padding: 15px;
+	padding-top: 10px;
+	padding-bottom: 30px;
+	text-shadow: #FFFFFF 3px 3px 9px;
+	box-shadow: #FFFFFF 5px 5px 10px;
+	border-radius: 25px;
+}
+
+h2{
+	text-align: center;
+	font: bold 40px black;
+}
+
+
+#animacion_telefono{
+	height:70%;
+	width:70%;
+	margin-left: auto;
+}
+
+#navbar{
+	background:rgba(0,0,0,0.37);
+	justify-content: space-around;
+	width:100%;
+	display:flex;
+	height: 80px;
+	position:fixed;
+	align-items: center;
+	top: 0;
+	transition: top 0.5s;
+}
+
+
+body{
+	margin: 0px;
+	width:100%;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background:linear-gradient(to right, #6804CD,#FEAE2C);
+	
+}
+
+
+.elementos_menu{
+	display: inline-block;
+	color: #FFFFFF;
+	text-decoration: none;
+	padding: 20px;
+	font: normal 20px "fuente_menu_nav";
+	transition: font-size 0.5s;
+}
+
+.letras_animadas{
+	color: #FFFFFF;
+	font-size:1.5em;
+	font-style: normal;
+}
+
+main{
+	min-height:300px;
+}
+
+
+
+
+#bateria{
+	width:100px;
+	height:100px;
+	margin-right: 10px;
+	top:0;
+	right:0;
+	position:fixed;
+
+}
+/*Para los efectos de parallax*/
+/*---------------------------------------------------------------------------*/
+#section_sobremi{
+	background-image: url(img/2.png);
+}
+
+#section_proyectos{
+	background-image: url(img/3.png);
+}
+
+
+
+#section_blog{
+	background-image: url(img/5.png);
+}
+
+.parallax {
+	width:100%;
+	height:100vh;
+	min-height: 600px;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	justify-content:center;
+	align-items: center;
+}
+
+h3{
+	font-size:32px;
+	font-weight:300px;
+}
+
+#h4_contacto{
+	font-size: 30px;
+	color: #FFFFFF;
+}
+
+.cabecera_parallax{
+	background-color: white;
+	display:flex;
+	justify-content:center;
+	padding:0px;
+}
+
+#contenedor_contacto{
+	height:100%;
+	width: 100%;
+	display:flex;
+	justify-content:center;
+	align-items: center;
+}
+
+#tabla_contacto{
+	background-color: white;
+	height:55%;
+	width:25%;
+	min-width: 280px;
+	min-height: 500px;
+	background:rgba(0,0,0,0.37);
+	display:flex;
+	justify-content:center;/*Para alinear horizontalmente*/
+	box-shadow: #FFFFFF 5px 5px 10px;
+	border: white 3px solid;
+}
+
+label{
+	display:inline-block;
+	width:30%;
+}
+
+td{
+	padding-bottom: 15px;
+	color: #FFFFFF;
+	font-size:18px;
+}
+
+#td_enviar{
+	display:flex;
+	justify-content:center;
+}
+
+#enviar{
+	background-color: white;
+	border: white 5px solid;
+	font-size: 16px;
+	font-weight: bold;
+	border-radius: 25px;
+}
+
+#nombre:invalid,#correo:invalid{
+	color: red;
+}

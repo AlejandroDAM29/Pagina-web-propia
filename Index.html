@@ -1,0 +1,155 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<!--Palabras clave para posicionamiento-->
+<meta name="Keywords" content="Alejandro Exp&#243;sito, programador,developer,software development, programmer, Alejandro Exposito, desarrollador software, programaci&#243;n">
+<meta http-equiv="X-AU-compatible" conent="ie=edge">
+
+<!--Descripción breve de la página-->
+<meta name="Description" content="Web de personal desarrollador de software informático Alejandro Exp&#243;sito, programador especializado en el desarrollo de aplicaciones para android y IOS. Entra y echa un vistazo a los proyectos en terminados y en elaboración.">
+
+<!--Agrego librerías y archivo js propio-->
+<script src="js/jquery-3.6.0.js" type="text/javascript"></script>
+<script src="js/script.js" type="text/javascript"></script>
+<script src="js/typed.js@2.0.12.js" type="text/javascript"></script>
+
+
+<!--Lottie para teléfono-->
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+
+<!--Agrego hoja de estilo-->
+<link rel="stylesheet" href="principal.css"/>
+
+</style>
+<title>Alejandro developer</title>
+
+
+	
+</head>
+<!--_____________________________________________________________-->
+	
+<body>
+	<!--Introducción-->	
+	<!--<lottie-player id="animacion_telefono" src="https://assets7.lottiefiles.com/packages/lf20_pta1hz9f.json"  background="transparent"  speed="1"  loop  autoplay></lottie-player>-->
+	<hgroup>
+		<header>
+			<!--Menú-->
+			<nav id="navbar">
+				<div>
+					<a class="elementos_menu" href="">Inicio</a>
+					<a class="elementos_menu" href="">Proyectos</a>
+					<a class="elementos_menu" href="">Sobre m&#205;</a>
+					<a class="elementos_menu" href="">Contacto</a>
+					<a class="elementos_menu" href="">Blog</a>
+				</div>
+			</nav>
+			<!--Inserto video para bateria-->
+			<video src="video/bateria.m4v" id="bateria"></video>
+		</header>
+
+		<header id="cabecera">
+			<h1>Alejandro Exp&#243;sito</h1>
+		</header>
+
+		<header>
+			<h2>Sofware developer <span class="typed"></span></h2>
+		</header>
+	</hgroup>
+
+
+	
+	<!--Empieza el cuerpo de la página-->
+	<main id="main_general"></main>
+
+		<section id="section_proyectos" class="parallax">
+			<header class="cabecera_parallax">
+				<h3>Proyectos</h3>
+			</header>
+		</section>
+
+		<section id="section_sobremi" class="parallax">
+			<header class="cabecera_parallax">
+				<h3>Sobre m&#205;</h3>
+			</header>
+		</section>
+
+		<section id="section_blog" class="parallax">
+			<header class="cabecera_parallax">
+				<h3>Blog</h3>
+			</header>
+		</section>
+
+		<section id="section_contacto" class="parallax">
+			<header class="cabecera_parallax">
+				<h3>Contacto</h3>
+			</header>
+			<div id="contenedor_contacto">
+				
+				<!--Tabla de contacto-->
+				<table id="tabla_contacto">
+					<form action="enviar.php" method="post" id="formulario">
+					<tr>
+						<td><h4 id="h4_contacto"><u>Cont&#225;ctame</u></h4></td>
+					</tr>
+					<tr>
+						<td>
+							<label for="nombre">Nombre(*)</label>
+							<input type="text" name="nombre" id="nombre" placeholder="Nombre"
+							required minlength="3" pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{2,48}">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for="correo">Correo electr&#243;nico(*)</label>
+							<input type="email" name="correo" id="correo" placeholder="Escribe tu correo aquí"
+							required>
+						</td>
+					</tr>
+					<tr>
+						<td><label for="quien_contacta">¿Qui&#233;n contacta?</label>
+							<select name="quien_contacta" id="quien_contacta" required>
+								<option value="empresa">Empresa</option>
+								<option value="freelancer">Freelancer</option>
+								<option value="estudiante">Estudiante</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for="comentario">Comentario(*)</label>
+							<textarea name="comentario" id="comentario" cols="35" rows="7" placeholder="Deja aqu&#237; tus dudas"
+							required></textarea>
+						</td>
+					</tr>
+					<tr>
+						<td id="td_enviar">
+							<input type="submit" value="Enviar" id="enviar">
+						</td>
+					</tr>
+				</form>
+				</table>
+			
+			</div>
+		</section>
+
+	</main>
+
+	
+
+	
+
+	
+	
+</body>
+	<!--__________________________________________________________-->
+<footer>
+		<!--<p>Página creada por Alejandro Expósito Ortiz</p>-->
+</footer>	
+	
+	
+	
+	
+	<!--__________________________________________________________-->
+</html>
